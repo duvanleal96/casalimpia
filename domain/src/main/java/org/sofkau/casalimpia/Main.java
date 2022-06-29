@@ -1,4 +1,4 @@
-package org.sofkau;
+package org.sofkau.casalimpia;
 
 public class Main {
     public static void main(String[] args) {

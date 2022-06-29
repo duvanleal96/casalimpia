@@ -1,4 +1,4 @@
-package org.sofkau.cliente;
+package org.sofkau.casalimpia.cliente.values;
 
 import co.com.sofka.domain.generic.ValueObject;
 

@@ -1,14 +1,16 @@
-package org.sofkau.cliente;
+package org.sofkau.casalimpia.cliente;
 
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
+import org.sofkau.casalimpia.cliente.values.ClienteIdentity;
+import org.sofkau.casalimpia.cliente.values.Nombre;
 
 import java.util.List;
 
 public class Cliente extends AggregateEvent<ClienteIdentity> {
-    private final Inmueble inmueble;
-    private final Nombre nombre;
-    private final Calificacion;
+    protected Inmueble inmueble;
+    protected Nombre nombre;
+    protected Calificacion calificacion;
 
     public Cliente(ClienteIdentity entityId) {
         super(entityId);
