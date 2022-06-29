@@ -1,7 +1,7 @@
-package org.sofkau.empleado;
+package org.sofkau.casalimpia.empleado;
 
 import co.com.sofka.domain.generic.AggregateEvent;
-import org.sofkau.empleado.values.EmpleadoId;
+import org.sofkau.casalimpia.empleado.values.EmpleadoId;
 
 public class Empleado extends AggregateEvent<EmpleadoId> {
 

@@ -1,4 +1,4 @@
-package org.sofkau.empleado.values;
+package org.sofkau.casalimpia.empleado.values;
 
 import co.com.sofka.domain.generic.Identity;
 
