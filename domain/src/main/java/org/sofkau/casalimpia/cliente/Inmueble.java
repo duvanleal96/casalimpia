@@ -9,7 +9,16 @@ public class Inmueble extends Entity<InmuebleId> {
     private TipoInmueble tipo;
     private Ubicacion ubicacion;
 
-    public Inmueble(InmuebleId entityId) {
+    public Inmueble(InmuebleId entityId)
+    {
         super(entityId);
+    }
+
+    public void cammbiarUbicacion(String nuevaUbicacion){
+        this.ubicacion = new Ubicacion(nuevaUbicacion);
+    }
+
+    public void cambiarTipo(String tipoInmueble){
+        this.tipo = new TipoInmueble(tipoInmueble);
     }
 }
