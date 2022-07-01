@@ -2,9 +2,11 @@ package org.sofkau.casalimpia.servicio;
 
 import co.com.sofka.domain.generic.ValueObject;
 
-public class Comentario implements ValueObject {
+import java.util.Date;
+
+public class Fecha implements ValueObject<Date> {
     @Override
-    public Object value() {
+    public Date value() {
         return null;
     }
 }

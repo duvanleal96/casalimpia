@@ -2,9 +2,10 @@ package org.sofkau.casalimpia.servicio;
 
 import co.com.sofka.domain.generic.ValueObject;
 
-public class Comentario implements ValueObject {
+public class Monto implements ValueObject<Integer> {
+
     @Override
-    public Object value() {
+    public Integer value() {
         return null;
     }
 }

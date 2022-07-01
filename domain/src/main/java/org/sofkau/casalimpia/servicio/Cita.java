@@ -1,4 +1,10 @@
 package org.sofkau.casalimpia.servicio;
 
-public class Cita {
+import co.com.sofka.domain.generic.ValueObject;
+
+public class Cita implements ValueObject {
+    @Override
+    public Object value() {
+        return null;
+    }
 }
