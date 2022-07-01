@@ -14,7 +14,7 @@ public class Cliente extends AggregateEvent<ClienteId> {
 
     public Cliente(ClienteId entityId, Nombre nombre) {
         super(entityId);
-        appendChange(new ClienteCreado(nombre)).apply();
+        appendChange(new ClienteCreado(entityId, nombre)).apply();
     }
 
     private Cliente(ClienteId entityId) {
