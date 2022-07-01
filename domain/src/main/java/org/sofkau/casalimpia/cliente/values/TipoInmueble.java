@@ -2,6 +2,8 @@ package org.sofkau.casalimpia.cliente.values;
 
 import co.com.sofka.domain.generic.ValueObject;
 
+import java.util.Objects;
+
 public class TipoInmueble implements ValueObject<String> {
     private enum Tipos{CASA, APARTAMENTO, OFICINA};
     private Tipos tipo;
@@ -37,5 +39,18 @@ public class TipoInmueble implements ValueObject<String> {
     @Override
     public String value() {
         return this.tipo.name();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        TipoInmueble that = (TipoInmueble) o;
+        return tipo == that.tipo;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(tipo);
     }
 }
