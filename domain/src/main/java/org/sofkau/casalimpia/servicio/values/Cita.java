@@ -1,4 +1,4 @@
-package org.sofkau.casalimpia.servicio;
+package org.sofkau.casalimpia.servicio.values;
 
 import co.com.sofka.domain.generic.Entity;
 import org.sofkau.casalimpia.servicio.values.CitaId;
